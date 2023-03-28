@@ -1,0 +1,43 @@
+/* 스타일 시트에서는 이것으로 주석 처리*/
+/* 1. 전체/공용 선택자)*/
+*{
+    color:orange;
+}
+
+/* 2. 태그 선택자 : 1개가 아닌 모두~ */
+p{
+    background-color: olivedrab;
+    color:white;
+}
+
+/* 3. 클래스 선택자 : 여러번 반복, 재사용  */
+.padding{
+    padding: 15px, 20px;
+}
+ .border{   
+    border: 1px solid #222;
+}
+/* 4. 아이디 선택자 : 문서 내에서 한 번만 사용 */
+    body{
+        background-color: lightyellow;
+    }
+    #wrap{
+        background-color: white;
+        border: 1px dotted #555;
+        padding: 10px 20px;
+        margin: 20px;
+
+    }
+/* 5. 그룹 선택자 */
+p, h1 .border{
+    border-width: 3px; /*선-두께 */
+    border-style: dashed; /*선-종류 */
+    margin: 15px; /*바깥 여백 */
+}    
+.naver{
+    color:green;
+    display:inline-block
+}
+.naver li{
+    display: inline-block;
+}
